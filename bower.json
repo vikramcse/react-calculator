@@ -1,0 +1,20 @@
+{
+  "name": "react-calculator",
+  "description": "Simple calculator app in ReactJs",
+  "main": "''",
+  "authors": [
+    "Vikram Jadhav"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/alicoding/react-webpack-babel",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mui": "^0.5.8"
+  }
+}
