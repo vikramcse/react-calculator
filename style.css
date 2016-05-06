@@ -1,0 +1,30 @@
+.display {
+	background: #42a5f5;
+	height: 100px;
+	width: 390px;
+	padding-left: 12px;
+	font-size: 35px;
+	color: white;
+	display: flex;
+	align-items: center;
+}
+
+.controls {
+	font-size: 25px;
+}
+
+.center {
+  margin: 0px auto;
+}
+
+.clear {
+	min-height: 60px;
+  width: 390px
+}
+
+button {
+  min-width: 90px;
+  min-height: 90px;
+  margin: 5px;
+  font-size: 35px;
+}
