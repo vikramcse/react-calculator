@@ -1,5 +1,8 @@
-require("./bower_components/Materialize/dist/css/materialize.css")
-require("./style.css")
+require("jquery");
+require("hammerjs");
+require("./bower_components/Materialize/dist/css/materialize.css");
+require("./bower_components/Materialize/dist/js/materialize.js");
+require("./style.css");
 
 import React from 'react';
 import ReactDOM from 'react-dom';
