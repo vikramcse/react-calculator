@@ -8,7 +8,7 @@ class Button extends React.Component {
   }
 
   handleClick() {
-    this.props.clickHandler(this.props.value);
+    this.props.clickHandler(this.props.value, this.props.type);
   }
 
   render() {
@@ -18,8 +18,9 @@ class Button extends React.Component {
       <button
         value={this.props.value}
         onClick={this.handleClick}
-        className={"btn waves-effect waves-light" + (type === 'operator' ? ' grey': '')}
-        disabled={type === 'operator' ? true: false}>{this.props.value}</button>
+        className={"btn waves-effect waves-light" + (type === 'operator' ? ' grey': '')}>
+          {this.props.value}
+        </button>
     );
   }
 }
