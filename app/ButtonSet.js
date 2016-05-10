@@ -18,10 +18,19 @@ class ButtonSet extends React.Component {
       return Util.newInput = `${Util.curInput}${value}`;
     } else {
       if (value !== '=') {
-        Util.newInput = `${Util.curInput} ${value} `;
-      } else if(value === 'clear') {
-        console.log('clearing');
-        Util.currInput = 0;
+        if (value === 'clear') {
+          Util.newInput = 0;
+        } else if(value === 'del') {
+          var str = String(Util.curInput);
+          var deleted = str.substring(0, (str.length - 1));
+          if (deleted === '') {
+            Util.newInput = 0;
+          } else {
+            Util.newInput = deleted;
+          }
+        } else {
+          Util.newInput = `${Util.curInput} ${value} `;
+        }
       } else {
         Util.newInput = eval(Util.curInput);
       }
@@ -29,7 +38,7 @@ class ButtonSet extends React.Component {
   }
 
   render() {
-    var arr = [7, 8, 9, '+', 4, 5, 6, '-', 1, 2, 3, '*', 0, '.', '=', '/', 'clear'];
+    var arr = [7, 8, 9, '+', 4, 5, 6, '-', 1, 2, 3, '*', 0, '.', '=', '/', 'del','clear'];
 
     var list = arr.map(function(item) {
       return (<Button
