@@ -4,7 +4,7 @@
   "description": "Simple calculator app in React",
   "main": "''",
   "scripts": {
-    "build": "NODE_ENV=production webpack -p --config webpack.production.config.js --progress --profile --colors",
+    "build": "webpack -p --set-env-NODE_ENV=production --config webpack.production.config.js --progress --profile --colors",
     "dev": "webpack-dev-server --progress --profile --colors --hot"
   },
   "repository": {
